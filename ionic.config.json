@@ -1,0 +1,7 @@
+{
+  "name": "tigoApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

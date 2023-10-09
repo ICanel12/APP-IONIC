@@ -1,0 +1,101 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="notifications-outline"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="help-circle-outline"></ion-icon>
+      </ion-button>
+      <ion-button tab="profile" href="/tabs/profile">
+        <ion-icon slot="icon-only" name="person-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">factura</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Deuda total</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p style="font-size: 40px; color: #00377B;">Q0</p>
+      <div style="display: flex;">
+        <div style="color:#00377B;">
+          <p>Factura:</p>
+          <p>Fecha límite de pago:</p>
+          <p>Facturas pendientes:</p>
+        </div>
+        <div style="margin-left: 40px;">
+          <p>6985255</p>
+          <p>08 Oct 2023</p>
+          <p>0</p>
+        </div>
+      </div>
+      <br>
+      <div>
+        <a href="" style="text-decoration: none; color: #7C5AF1;">VER FACTURA</a>
+      </div>
+      <br>
+      <div>
+        <ion-radio-group value="custom-checked">
+          <ion-radio value="custom" aria-label="Custom checkbox">Deuda total: Q0</ion-radio>
+          <br>
+          <ion-radio value="custom-checked" aria-label="Custom checkbox that is checked">Pago parcial</ion-radio>
+        </ion-radio-group>
+      </div>
+    </ion-card-content>
+
+    <div style="text-align: end; margin: 0px 15px 13px 13px;">
+      <ion-button shape="round" style="font-size: 10px; --background: #7C5AF1; font-weight: bold;">PAGAR</ion-button>
+    </div>
+  </ion-card>
+
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Historial de Facturas</ion-card-title>
+    </ion-card-header>
+    <hr class="linea-horizontal">
+    <ion-card-content>
+      <div style="display: flex;">
+        <div style="width: 80%;">
+          <p style="color: #7C5AF1; font-weight: bold;">02/Oct/2023</p>
+          <p>Q315</p>
+        </div>
+        <div>
+          <p style="color: green; font-weight: bold;">Pagada</p>
+        </div>
+      </div>
+      <hr class="linea-horizontal">
+      <div style="display: flex;">
+        <div style="width: 80%;">
+          <p style="color: #7C5AF1; font-weight: bold;">02/Sep/2023</p>
+          <p>Q315</p>
+        </div>
+        <div>
+          <p style="color: green; font-weight: bold;">Pagada</p>
+        </div>
+      </div>
+      <hr class="linea-horizontal">
+      <div style="display: flex;">
+        <div style="width: 80%;">
+          <p style="color: #7C5AF1; font-weight: bold;">02/Ago/2023</p>
+          <p>Q315</p>
+        </div>
+        <div>
+          <p style="color: green; font-weight: bold;">Pagada</p>
+        </div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,94 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="notifications-outline"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="help-circle-outline"></ion-icon>
+      </ion-button>
+      <ion-button tab="profile" href="/tabs/profile">
+        <ion-icon slot="icon-only" name="person-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">profile</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <div style="text-align: center;">
+        <img style="width: 35%;" alt="Silhouette of mountains" src="https://cdn.icon-icons.com/icons2/2550/PNG/512/user_circle_icon_152504.png" />
+      </div>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-input
+            label="Nombre y Apellido"
+            labelPlacement="stacked"
+            [clearOnEdit]="true"
+            placeholder="Ingrese nombre y apellido"
+            value="Erick Sabán"
+          >
+          </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input
+            label="Documento"
+            labelPlacement="stacked"
+            [clearOnEdit]="true"
+            placeholder="*Se añadirán tus servicios asociados"
+          >
+          </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input
+            label="Teléfono principal"
+            labelPlacement="stacked"
+            [clearOnEdit]="true"
+            placeholder="Ingrese teléfono"
+            value="(502) 56987565"
+          >
+          </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input
+            label="Correo principal de ingreso"
+            labelPlacement="stacked"
+            [clearOnEdit]="true"
+            placeholder="*Añádelo para una mejor experiencia"
+          >
+          </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input
+            label="Método adicionales de contacto"
+            labelPlacement="stacked"
+            [clearOnEdit]="true"
+            placeholder="Otros correos y teléfono"
+          >
+          </ion-input>
+        </ion-item>
+      </ion-list>
+
+      <div style="text-align: center; margin-top: 14px; margin-bottom: 14px;">
+        <a href="" style="text-decoration: none; color:#7C5AF1;">¿Quieres borrar tu usuario?</a>
+      </div>
+
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>

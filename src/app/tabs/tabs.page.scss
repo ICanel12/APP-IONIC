@@ -1,1 +1,13 @@
 
+
+ion-tab-button {
+  color: rgb(224, 224, 224); /* Cambia el color de íconos y texto a blanco */
+}
+
+ion-tab-button.tab-selected ion-icon {
+  color: #7C5AF1; /* Cambia el color del ícono a tu preferencia */
+}
+
+ion-tab-button.tab-selected ion-label {
+  color: #7C5AF1; /* Cambia el color del texto a tu preferencia */
+}

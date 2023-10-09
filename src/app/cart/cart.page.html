@@ -1,0 +1,138 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="notifications-outline"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="help-circle-outline"></ion-icon>
+      </ion-button>
+      <ion-button tab="profile" href="/tabs/profile">
+        <ion-icon slot="icon-only" name="person-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">cart</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title style="color: #00377B; font-weight: bold;">Cobertura Adicional</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <hr class="linea-horizontal">
+      <div style="display: flex;">
+        <div style="color:#00377B;">
+          <p>Mundial Corporativo (Incluye 6GB de tu plan en 3G.)</p>
+        </div>
+        <div style="margin-left: 40px;">
+            <ion-button shape="round" style="font-size: 10px; --background: #7C5AF1; font-weight: bold;">Q499</ion-button>
+        </div>
+      </div>
+    </ion-card-content>
+    <br>
+  </ion-card>
+
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title style="color: #00377B; font-weight: bold;">Paquetes Roaming</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <hr class="linea-horizontal">
+      <div style="display: flex;">
+        <div style="color:#00377B;">
+          <p>Aumento de Velocidad América (1.5GB)</p>
+          <hr class="linea-horizontal">
+          <p>Aumento de Velocidad América (3.5GB)</p>
+          <hr class="linea-horizontal">
+          <p>Aumento de Valocidad Mundial (1GB)</p>
+          <hr class="linea-horizontal">
+          <p>Aumento de Velocidad Mundial (2.5GB)</p>
+        </div>
+        <div style="margin-left: 40px;">
+            <ion-button shape="round" style="font-size: 10px; --background: #7C5AF1; font-weight: bold;">Q50</ion-button>
+            <hr class="linea-horizontal">
+            <ion-button shape="round" style="font-size: 10px; --background: #7C5AF1; font-weight: bold;">Q99</ion-button>
+            <hr class="linea-horizontal">
+            <ion-button shape="round" style="font-size: 10px; --background: #7C5AF1; font-weight: bold;">Q199</ion-button>
+            <hr class="linea-horizontal">
+            <ion-button shape="round" style="font-size: 10px; --background: #7C5AF1; font-weight: bold;">Q450</ion-button>
+        </div>
+      </div>
+    </ion-card-content>
+    <br>
+  </ion-card>
+
+
+
+  <ion-card>
+    <ion-card-header>
+      <div style="display: flex;">
+        <ion-icon name="journal-outline" style="color: #00377B; font-size: 20px; margin-right: 5px;"></ion-icon>
+        <ion-card-title style="color: #00377B; font-weight: bold;">Tarjeta de Crédito/Débito</ion-card-title>
+      </div>
+      <ion-card-subtitle>Usar tarjeta guardada</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+          <ion-input
+            label="Número completo de la tarjeta"
+            label-placement="floating"
+            fill="outline"
+            placeholder="Enter text"
+          >
+          </ion-input>
+          <br>
+          <div style="display: flex;">
+            <ion-input
+              label="Fecha de expiración"
+              label-placement="floating"
+              fill="outline"
+              placeholder="MM/YY"
+              style="margin-right: 10px;"
+            >
+            </ion-input>
+            <ion-input
+              label="Código de seguridad"
+              label-placement="floating"
+              fill="outline"
+              placeholder="000"
+            >
+            </ion-input>
+          </div>
+          <br>
+          <ion-input
+            label="Nombre del titular"
+            label-placement="floating"
+            fill="outline"
+            placeholder="Como aparece en la tarjeta"
+            >
+          </ion-input>
+          <br>
+          <ion-input
+            label="Correo electrónico"
+            label-placement="floating"
+            fill="outline"
+            placeholder="Opcional"
+            >
+          </ion-input>
+      </ion-list>
+
+      <div style="text-align: end; margin: 0px 15px 13px 13px;">
+        <ion-button shape="round" style="font-size: 10px; --background: #7C5AF1; font-weight: bold;">CONTINUAR</ion-button>
+      </div>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
